@@ -1,0 +1,375 @@
+/* === Navigation Farbe === */
+
+/*
+Blau:         #1F4E8C;
+Dunkel Grau:  #3D3F45;
+Hell Grau:    #E5E5E5;
+Rot:          #A62C21;
+*/
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway', 'Lato', 'Helvetica Neue' ,'Arial', sans-serif;
+  position: relative;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* === GENERALES === */
+.clear-fix-hack::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.screenreader {
+  display: none;
+}
+
+
+
+.btn-type-1 {
+  background-color: #A62C21;
+  border: 2px solid  #A62C21;
+  color: #FFF;
+  padding: .4rem .7rem;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.intro-container {
+  width: 80%;
+  text-align: center;
+}
+
+/*Navigation Leiste*/
+
+#header-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #3D3F45;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.container, .row, .col-6, ul, li{
+  height: 100%;
+}
+
+#header-nav  a > img {
+  width: auto;
+  height: 30px;
+  float: left;
+  margin: .55rem;
+}
+
+#header-nav  ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+#header-nav  ul > li {
+  display: inline-block;
+  padding: 0 .2rem;
+}
+
+#header-nav  ul > li > a {
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: .85rem;
+}
+
+#header-nav  ul > li > a:link {
+
+}
+
+#header-nav  ul > li > a:hover {
+  color: #E5E5E5;
+
+
+}
+
+#header-nav  ul > li > a:active {
+  color:  #E5E5E5;
+
+
+}
+
+#header-nav  ul > li > a:visited {
+
+
+}
+
+#header-nav .col-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* #header-nav * {
+  height: 100%;
+} */
+
+
+/* === Navigationleiste (MOBILE) === */
+#mobile-nav-button{
+  color: #FFF;
+  border: 2px solid #FFF;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  margin-top: .4rem;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+#nav-mobile-content > ul > li {
+  background-color: #3D3F45;
+  height: 50px;
+  padding: 0 1.2rem;
+  display: block;
+}
+
+#nav-mobile-content > ul {
+
+  height: auto;
+}
+
+#nav-mobile-dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+#nav-mobile-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+
+#nav-mobile-dropdown:hover > #nav-mobile-content  {
+  display: block;
+
+}
+
+#mobile-nav {
+  display: none;
+}
+
+.active {
+  background-color: #A62C21 !important;
+}
+@media (max-width: 1024px) {
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+
+}
+
+/* === HEADER PANNER === */
+
+#header-panner {
+  width: 100%;
+  height: 0;
+  padding-top: 20.83%;
+  background: url(../img/hintergrund.jpg) no-repeat;
+  background-size: contain;
+}
+
+#header-panner-klein {
+  width: 100%;
+  height: 0;
+  padding-top: 15.625%;
+  background: url(../img/hintergrund-klein.jpg) no-repeat;
+  background-size: contain;
+}
+
+/* <!-- === NEWS LETTER BEREICH === --> */
+
+#newsletter-bereich {
+  width: 100%;
+  background-color: #3D3F45;
+
+}
+
+#nb-form {
+  margin-top: .7rem;
+  float: right;
+  width: 100%;
+  text-align: right;
+
+}
+
+#nb-email-input {
+  width: 70%;
+  height: 35px;
+  padding: .4rem;
+  border: 2px solid #FFF;
+}
+
+#nb-werbetext  {
+  font-size: 1rem;
+  color: #FFF;
+}
+
+#nb-btn{
+  height: 35px;
+}
+
+@media (max-width: 1392px) {
+  #nb-email-input {
+    width: 65%;
+
+  }
+
+}
+
+@media (max-width: 1204px) {
+  #nb-email-input {
+    width: 100%;
+
+  }
+  #nb-btn{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  #newsletter-bereich .col-2{
+    padding: 0 0 10px 0;
+  }
+  #nb-email-input {
+    margin-bottom: 5px;
+
+  }
+
+  #newsletter-bereich .col-4{
+    padding: 0;
+
+  }S
+}
+
+@media (max-width: 480px ) {
+  #nb-werbetext {
+    display: none;
+  }
+  #nb-email-input {
+    margin-bottom: 5px;
+
+  }
+  #newsletter-bereich .col-2{
+    padding: 0 0 10px 0;
+  }
+
+  #newsletter-bereich .col-4{
+    padding: 0;
+
+  }
+
+}
+
+/* LEISTUNGEN-BEREICH */
+#leistungen-bereich .col-6, #leistungen-bereich .col-3 {
+  text-align: center;
+  margin: 8px 1px;
+  box-shadow: 0 0 8px 3px grey, 0 0 2px grey;
+}
+
+
+
+ /* === GRID-SYSTEM (SICHTBARKEIT)===
+
+.border, .border * {
+  border: 1px solid #91C4FF;
+}
+
+[class *="col-"]{
+
+  background-color: #BFDDFF;
+}
+
+p {
+  background-color: #91C4FF;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+*/
+
+/* === GRID-SYSTEM === */
+
+
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-1 { width: 16.666%;  }
+.col-2 { width: 33.333%;  }
+.col-3 { width: 50%;      }
+.col-4 { width: 66.666%;  }
+.col-6 { width: 100%;     }
+
+[class *="col-"]{
+  min-height: 1px;
+  float: left;
+  padding: .8rem;
+}
+
+
+/*
+480
+768
+1024
+*/
+@media (max-width: 1024px) {
+  .col-1 { width: 33.333%; }
+
+}
+
+@media (max-width: 768px) {
+  .col-1 { width: 50%;  }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+
+}
+
+@media (max-width: 480px) {
+  .col-1 { width: 100%; }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+}
